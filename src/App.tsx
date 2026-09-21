@@ -1,7 +1,6 @@
 import { Navbar } from './components/Navbar'
 import { Hero } from './components/Hero'
-import { MissionVision } from './components/MissionVision'
-import { About } from './components/About'
+import { Standards } from './components/Standards'
 import { JUT } from './components/JUT'
 import { Focus } from './components/Focus'
 import { Process } from './components/Process'
@@ -15,8 +14,7 @@ function App() {
       <Navbar />
       <main>
         <Hero />
-        <MissionVision />
-        <About />
+        <Standards />
         <JUT />
         <Focus />
         <Process />

@@ -1,114 +1,151 @@
 .navbar {
-  position: fixed;
+  position: sticky;
   top: 0;
-  left: 0;
-  right: 0;
   z-index: 100;
-  background: rgba(250, 249, 247, 0.85);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.2s, box-shadow 0.2s;
+  background-color: rgba(248, 249, 250, 0.94);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--color-border);
+  transition: background-color var(--transition-fast), border-color var(--transition-fast);
 }
 
-.navbar.scrolled {
-  border-color: var(--color-border);
-  box-shadow: var(--shadow-sm);
+.navbar-scrolled {
+  background-color: rgba(255, 255, 255, 0.98);
+  border-bottom-color: var(--color-border-strong);
 }
 
 .navbar-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 4.5rem;
+  height: 64px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  text-decoration: none;
 }
 
 .navbar-logo {
-  display: flex;
-  align-items: center;
+  height: 24px;
+  width: auto;
+  object-fit: contain;
 }
 
-.navbar-logo img {
-  height: 1.75rem;
-  width: auto;
-  display: block;
+.navbar-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 8px;
+  background-color: var(--color-surface-subtle);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xs);
+}
+
+.navbar-badge-text {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--color-text-secondary);
 }
 
 .navbar-nav {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: var(--space-5);
 }
 
-.navbar-nav a:not(.btn) {
-  font-size: 0.9375rem;
-  font-weight: 500;
-  color: var(--color-text);
-  transition: color 0.2s;
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  list-style: none;
 }
 
-.navbar-nav a:not(.btn):hover {
-  color: var(--color-heading);
-}
-
-.navbar-cta {
-  padding: 0.625rem 1.25rem;
+.navbar-link {
   font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  transition: color var(--transition-fast);
+  padding: 6px 0;
+}
+
+.navbar-link:hover {
+  color: var(--color-text-primary);
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
 }
 
 .navbar-toggle {
   display: none;
-  flex-direction: column;
-  gap: 5px;
-  background: none;
-  border: none;
+  background: transparent;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xs);
+  padding: 8px;
   cursor: pointer;
-  padding: 0.5rem;
+  flex-direction: column;
+  gap: 4px;
 }
 
-.navbar-toggle span {
+.toggle-line {
   display: block;
-  width: 22px;
+  width: 18px;
   height: 2px;
-  background: var(--color-heading);
-  border-radius: 2px;
-  transition: transform 0.2s, opacity 0.2s;
+  background-color: var(--color-text-primary);
+  transition: transform var(--transition-fast), opacity var(--transition-fast);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   .navbar-toggle {
     display: flex;
   }
 
   .navbar-nav {
     position: fixed;
-    top: 4.5rem;
+    top: 64px;
     left: 0;
     right: 0;
-    flex-direction: column;
-    gap: 0;
-    background: var(--color-surface);
+    background-color: var(--color-surface);
     border-bottom: 1px solid var(--color-border);
-    padding: 1rem 0 1.5rem;
-    transform: translateY(-110%);
-    opacity: 0;
-    pointer-events: none;
-    transition: transform 0.25s, opacity 0.25s;
-    box-shadow: var(--shadow-md);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: var(--space-4);
+    gap: var(--space-4);
+    display: none;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.05);
   }
 
   .navbar-nav.open {
-    transform: translateY(0);
-    opacity: 1;
-    pointer-events: auto;
+    display: flex;
   }
 
-  .navbar-nav a:not(.btn) {
+  .navbar-links {
+    flex-direction: column;
+    align-items: flex-start;
     width: 100%;
-    padding: 0.875rem 1.25rem;
-    text-align: center;
+    gap: var(--space-2);
   }
 
-  .navbar-cta {
-    margin-top: 0.5rem;
+  .navbar-link {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    font-size: 0.9375rem;
+  }
+
+  .navbar-actions {
+    width: 100%;
+    padding-top: var(--space-2);
+    border-top: 1px solid var(--color-border);
+  }
+
+  .navbar-actions .btn {
+    width: 100%;
   }
 }

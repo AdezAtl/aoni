@@ -1,0 +1,194 @@
+/* Standards Section — Disciplined Architectural Layout */
+
+.standards-section {
+  background-color: var(--color-bg);
+}
+
+/* Callout Box */
+.standards-callout {
+  position: relative;
+  background-color: var(--color-dark);
+  border: 1px solid var(--color-dark-border);
+  border-radius: var(--radius);
+  padding: var(--space-6) var(--space-5);
+  margin-bottom: var(--space-6);
+  overflow: hidden;
+}
+
+.standards-callout-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: var(--color-accent);
+}
+
+.standards-callout-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.standards-quote {
+  font-size: clamp(1.25rem, 2.4vw, 1.75rem);
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: -0.015em;
+  color: var(--color-text-inverse);
+  font-style: normal;
+}
+
+.standards-attribution {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: 0.8125rem;
+  color: var(--color-text-inverse-muted);
+}
+
+.standards-divider-dot {
+  color: var(--color-dark-border);
+}
+
+/* 3 Pillars Grid */
+.standards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+@media (min-width: 768px) {
+  .standards-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.standards-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  transition: border-color var(--transition-fast), background-color var(--transition-fast);
+}
+
+.standards-card:hover {
+  border-color: var(--color-border-focus);
+  background-color: #fafbfc;
+}
+
+.standards-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-4);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.standards-num {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+.standards-card-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-3);
+}
+
+.standards-card-desc {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+  flex: 1;
+  margin-bottom: var(--space-5);
+}
+
+.standards-card-footer {
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.standards-metric-label {
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.standards-metric-value {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+/* Institutional Foundation Strip */
+.standards-foundation-strip {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+}
+
+@media (min-width: 640px) {
+  .standards-foundation-strip {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .standards-foundation-strip {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.foundation-item {
+  padding: var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+@media (min-width: 640px) {
+  .foundation-item:nth-child(odd) {
+    border-right: 1px solid var(--color-border);
+  }
+}
+
+@media (min-width: 1024px) {
+  .foundation-item {
+    border-bottom: none;
+    border-right: 1px solid var(--color-border);
+  }
+  .foundation-item:last-child {
+    border-right: none;
+  }
+}
+
+.foundation-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-muted);
+}
+
+.foundation-value {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}

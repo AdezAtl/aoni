@@ -1,73 +1,359 @@
-.process {
-  padding-block: var(--section-py);
-  background: var(--color-surface);
+/* Process & Governance Section */
+
+.process-section {
+  background-color: var(--color-surface);
 }
 
-.process-header {
-  text-align: center;
-  margin-bottom: 3rem;
-}
-
-.process-header .section-subtitle {
-  margin-inline: auto;
-}
-
-.process-flow {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  max-width: 900px;
-  margin-inline: auto;
-}
-
-.process-step {
+/* View Switcher Controls */
+.process-view-controls {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
+  gap: var(--space-2);
+  margin-bottom: var(--space-6);
 }
 
-.process-step-inner {
-  width: 100%;
+@media (min-width: 640px) {
+  .process-view-controls {
+    flex-direction: row;
+  }
+}
+
+.process-tab-btn {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 1.25rem 1rem;
-  background: var(--color-bg);
+  align-items: flex-start;
+  gap: var(--space-1);
+  padding: var(--space-4);
+  background-color: var(--color-bg);
   border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
-  text-align: center;
+  border-radius: var(--radius);
+  cursor: pointer;
+  text-align: left;
+  transition: all var(--transition-fast);
 }
 
-.process-number {
+.process-tab-btn:hover {
+  background-color: var(--color-surface-subtle);
+  border-color: var(--color-border-strong);
+}
+
+.process-tab-btn.active {
+  background-color: var(--color-surface);
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 1px var(--color-accent);
+}
+
+.process-tab-label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+/* Lifecycle Stepper Container */
+.lifecycle-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-  background: var(--color-accent);
-  color: #fff;
-  font-size: 0.875rem;
-  font-weight: 700;
+  flex-direction: column;
+  gap: var(--space-5);
 }
 
-.process-label {
+.lifecycle-stepper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-2);
+}
+
+@media (min-width: 640px) {
+  .lifecycle-stepper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .lifecycle-stepper {
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+
+.stepper-node {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: var(--space-3);
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-align: left;
+}
+
+.stepper-node:hover {
+  border-color: var(--color-border-focus);
+  background-color: var(--color-surface-subtle);
+}
+
+.stepper-node.active {
+  background-color: var(--color-text-primary);
+  border-color: var(--color-text-primary);
+  color: #ffffff;
+}
+
+.stepper-step-num {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  margin-bottom: var(--space-1);
+}
+
+.stepper-node.active .stepper-step-num {
+  color: #93bbfd;
+}
+
+.stepper-step-name {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--color-text-primary);
+}
+
+.stepper-node.active .stepper-step-name {
+  color: #ffffff;
+}
+
+/* Lifecycle Detail Panel */
+.lifecycle-detail-panel {
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.lifecycle-panel-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+}
+
+@media (min-width: 640px) {
+  .lifecycle-panel-header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.panel-stage-badge {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.panel-badge-step {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  letter-spacing: 0.05em;
+}
+
+.panel-stage-name {
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.panel-status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 6px 12px;
+  background-color: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.lifecycle-panel-body {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+@media (min-width: 768px) {
+  .lifecycle-panel-body {
+    grid-template-columns: 1.5fr 1fr;
+  }
+}
+
+.panel-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.panel-field-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  letter-spacing: 0.05em;
+}
+
+.panel-field-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-text-primary);
+}
+
+.panel-field-deliverable {
   font-size: 0.9375rem;
   font-weight: 600;
-  color: var(--color-heading);
+  color: var(--color-accent);
+  padding: var(--space-3);
+  background-color: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
 }
 
-.process-arrow {
-  font-size: 1rem;
-  color: var(--color-text-muted);
-  line-height: 1;
+.lifecycle-panel-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-border);
 }
 
-@media (max-width: 768px) {
-  .process-flow {
-    grid-template-columns: 1fr;
-    max-width: 320px;
+/* Governance Grid */
+.governance-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+@media (min-width: 768px) {
+  .governance-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
+}
+
+@media (min-width: 1024px) {
+  .governance-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Governance Section Elements */
+.governance-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.governance-notice-box {
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-left: 3px solid var(--color-accent);
+  border-radius: var(--radius);
+  padding: var(--space-4) var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.governance-notice-text {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+}
+
+.governance-category-tag {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-accent);
+  margin-bottom: 2px;
+}
+
+.governance-reports-tag {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  color: var(--color-text-muted);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  padding: 2px 6px;
+  border-radius: var(--radius-xs);
+  white-space: nowrap;
+}
+
+.governance-card {
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  transition: border-color var(--transition-fast);
+}
+
+.governance-card:hover {
+  border-color: var(--color-border-focus);
+}
+
+.governance-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-2);
+  margin-bottom: var(--space-3);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.governance-role-title {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.governance-role-scope {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+  flex: 1;
+  margin-bottom: var(--space-4);
+}
+
+.governance-card-footer {
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.governance-footer-label {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  letter-spacing: 0.05em;
+}
+
+.governance-footer-value {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--color-text-primary);
 }
