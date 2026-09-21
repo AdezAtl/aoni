@@ -53,7 +53,7 @@ export function Standards() {
             <div className="standards-attribution">
               <span>Aoni Ltd Operating Constitution</span>
               <span className="standards-divider-dot">·</span>
-              <span className="mono-tag mono-tag-dark">LAGOS, NIGERIA</span>
+              <span className="mono-tag mono-tag-dark">BENIN CITY, EDO STATE, NIGERIA</span>
             </div>
           </div>
         </div>
@@ -80,7 +80,7 @@ export function Standards() {
         <div className="standards-foundation-strip">
           <div className="foundation-item">
             <span className="foundation-label">Origin & Headquarters</span>
-            <strong className="foundation-value">Lagos, Nigeria</strong>
+            <strong className="foundation-value">Benin City, Edo State, Nigeria</strong>
           </div>
           <div className="foundation-item">
             <span className="foundation-label">Operational Strategy</span>

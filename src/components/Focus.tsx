@@ -90,7 +90,7 @@ export function Focus() {
         <div className="section-header">
           <span className="mono-tag active">
             <span className="status-indicator" />
-            SECTION 04 · TWO-DIMENSIONAL GROWTH MATRIX
+            SECTION 03 · TWO-DIMENSIONAL GROWTH MATRIX
           </span>
           <h2 className="section-title">Growing deeper in technology, wider across sectors.</h2>
           <p className="section-lead">

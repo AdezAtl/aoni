@@ -110,7 +110,7 @@ export function Snapshot() {
         <div className="section-header">
           <span className="mono-tag active">
             <span className="status-indicator" />
-            SECTION 06 · OPERATIONAL PRIORITIES & COMPANY SNAPSHOT
+            SECTION 05 · OPERATIONAL PRIORITIES & COMPANY SNAPSHOT
           </span>
           <h2 className="section-title">Current priorities: Direct focus on execution.</h2>
           <p className="section-lead">

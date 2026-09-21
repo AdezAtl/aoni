@@ -67,7 +67,7 @@ export function Contact() {
         <div className="section-header">
           <span className="mono-tag active">
             <span className="status-indicator" />
-            SECTION 07 · INSTITUTIONAL INQUIRIES & REGISTRATION
+            SECTION 06 · INSTITUTIONAL INQUIRIES & REGISTRATION
           </span>
           <h2 className="section-title">Engage with Aoni: Direct institutional terminal.</h2>
           <p className="section-lead">

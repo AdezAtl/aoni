@@ -35,16 +35,16 @@ export function Footer() {
                 <a href="#standards">Engineering Standards</a>
               </li>
               <li>
-                <a href="#jut">JUT Product Dossier</a>
-              </li>
-              <li>
                 <a href="#roadmap">Two-Dimensional Matrix</a>
               </li>
               <li>
-                <a href="#governance">Operating Governance</a>
+                <a href="#process">Development Cycle</a>
               </li>
               <li>
                 <a href="#priorities">Priorities Ledger</a>
+              </li>
+              <li>
+                <a href="#terminal">Waitlist & Inquiries</a>
               </li>
             </ul>
           </div>
@@ -54,7 +54,7 @@ export function Footer() {
             <h4 className="footer-col-title">Sectors & Build</h4>
             <ul className="footer-nav-list">
               <li>
-                <a href="#jut">JUT Artisan Platform</a>
+                <span>JUT Artisan Platform (In Build)</span>
               </li>
               <li>
                 <span>Advanced Services (Pipeline)</span>

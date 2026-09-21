@@ -31,12 +31,12 @@ export function Hero() {
             </p>
 
             <div className="hero-ctas">
-              <a href="#jut" className="btn btn-primary">
-                Inspect JUT Dossier
+              <a href="#terminal" className="btn btn-primary">
+                Join Product Waitlist
                 <span aria-hidden="true">→</span>
               </a>
-              <a href="#terminal" className="btn btn-outline">
-                Partner with Aoni
+              <a href="#standards" className="btn btn-outline">
+                Engineering Doctrine
               </a>
             </div>
 

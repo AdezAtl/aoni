@@ -5,9 +5,8 @@ import './Navbar.css'
 const navLinks = [
   { label: 'Overview', href: '#overview' },
   { label: 'Standards', href: '#standards' },
-  { label: 'JUT Product', href: '#jut' },
   { label: 'Growth Matrix', href: '#roadmap' },
-  { label: 'Governance', href: '#governance' },
+  { label: 'Process', href: '#process' },
   { label: 'Priorities', href: '#priorities' },
 ]
 

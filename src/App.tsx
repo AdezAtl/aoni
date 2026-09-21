@@ -1,7 +1,6 @@
 import { Navbar } from './components/Navbar'
 import { Hero } from './components/Hero'
 import { Standards } from './components/Standards'
-import { JUT } from './components/JUT'
 import { Focus } from './components/Focus'
 import { Process } from './components/Process'
 import { Snapshot } from './components/Snapshot'
@@ -15,7 +14,6 @@ function App() {
       <main>
         <Hero />
         <Standards />
-        <JUT />
         <Focus />
         <Process />
         <Snapshot />
