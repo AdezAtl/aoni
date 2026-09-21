@@ -7,7 +7,7 @@ const navLinks = [
   { label: 'Standards', href: '#standards' },
   { label: 'Growth Matrix', href: '#roadmap' },
   { label: 'Process', href: '#process' },
-  { label: 'Priorities', href: '#priorities' },
+  { label: 'Snapshot', href: '#snapshot' },
 ]
 
 export function Navbar() {

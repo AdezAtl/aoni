@@ -41,7 +41,7 @@ export function Footer() {
                 <a href="#process">Development Cycle</a>
               </li>
               <li>
-                <a href="#priorities">Priorities Ledger</a>
+                <a href="#snapshot">Company Snapshot</a>
               </li>
               <li>
                 <a href="#terminal">Waitlist & Inquiries</a>
@@ -87,7 +87,7 @@ export function Footer() {
             </div>
             <div className="footer-governance-item">
               <span className="footer-gov-label">Headquarters</span>
-              <span className="footer-gov-val">Lagos, Nigeria</span>
+              <span className="footer-gov-val">Benin City, Edo State, Nigeria</span>
             </div>
             <div className="footer-governance-item">
               <span className="footer-gov-label">Inquiries</span>
