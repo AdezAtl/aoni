@@ -29,10 +29,6 @@ export function Standards() {
     <section id="standards" className="section standards-section">
       <div className="container">
         <div className="section-header">
-          <span className="mono-tag active">
-            <span className="status-indicator" />
-            SECTION 02 · ENGINEERING DOCTRINE & STANDARDS
-          </span>
           <h2 className="section-title">Engineered by Aoni.</h2>
           <p className="section-lead">
             Aoni was founded on a simple operating reality: technology must work reliably where
@@ -74,26 +70,6 @@ export function Standards() {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Institutional Foundation Strip */}
-        <div className="standards-foundation-strip">
-          <div className="foundation-item">
-            <span className="foundation-label">Origin & Headquarters</span>
-            <strong className="foundation-value">Benin City, Edo State, Nigeria</strong>
-          </div>
-          <div className="foundation-item">
-            <span className="foundation-label">Operational Strategy</span>
-            <strong className="foundation-value">Deep Tech First, Sector Scale Later</strong>
-          </div>
-          <div className="foundation-item">
-            <span className="foundation-label">Commercial Debut</span>
-            <strong className="foundation-value">JUT (Tradesperson Booking)</strong>
-          </div>
-          <div className="foundation-item">
-            <span className="foundation-label">Long-Range Scope</span>
-            <strong className="foundation-value">Physical Devices & Systems</strong>
-          </div>
         </div>
       </div>
     </section>

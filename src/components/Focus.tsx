@@ -4,8 +4,6 @@ import './Focus.css'
 interface DimensionItem {
   id: string
   title: string
-  status: 'active' | 'pipeline' | 'horizon'
-  phase: string
   scope: string
   operatingStandard: string
 }
@@ -14,8 +12,6 @@ const techDepth: DimensionItem[] = [
   {
     id: 'tech-1',
     title: '1. Software & Mobile Applications',
-    status: 'active',
-    phase: 'CURRENT BASELINE',
     scope:
       'Consumer-facing and operations software tailored for Nigerian realities: offline caching, minimal bundle sizes, and resilient local data sync. Spearheaded by JUT.',
     operatingStandard: 'Production testing, mobile-first design, direct user-problem solving.',
@@ -23,8 +19,6 @@ const techDepth: DimensionItem[] = [
   {
     id: 'tech-2',
     title: '2. Advanced Technology Solutions',
-    status: 'pipeline',
-    phase: 'INTERMEDIATE HORIZON',
     scope:
       'Backend infrastructure, verification protocols, and distributed service layers that power multi-party commerce and workflow coordination across high-latency environments.',
     operatingStandard: 'Fault-tolerant distributed logic, secure transactional verification.',
@@ -32,8 +26,6 @@ const techDepth: DimensionItem[] = [
   {
     id: 'tech-3',
     title: '3. Physical Technology & Hardware',
-    status: 'horizon',
-    phase: 'LONG-TERM HORIZON',
     scope:
       'Dedicated physical devices and embedded systems engineered to operate under continuous power volatility, thermal stress, and dusty environments. "Engineered by Aoni" stamped on durable hardware.',
     operatingStandard: 'Low-power microcontrollers, solar/battery integration, physical endurance.',
@@ -44,8 +36,6 @@ const sectorBreadth: DimensionItem[] = [
   {
     id: 'sector-1',
     title: 'Technology & Digital Services',
-    status: 'active',
-    phase: 'ACTIVE SECTOR',
     scope:
       'The foundational proving ground for Aoni’s systems, team coordination, and engineering standards. First execution: JUT artisan marketplace.',
     operatingStandard: 'Established team, ongoing product development and testing.',
@@ -53,8 +43,6 @@ const sectorBreadth: DimensionItem[] = [
   {
     id: 'sector-2',
     title: 'Education & Practical Skills',
-    status: 'pipeline',
-    phase: 'PLANNED EXPANSION',
     scope:
       'Developing structured tools and systems to address critical bottlenecks in practical vocational training, technical certification, and learning access.',
     operatingStandard: 'Subject to dedicated operational unit establishment when justified.',
@@ -62,8 +50,6 @@ const sectorBreadth: DimensionItem[] = [
   {
     id: 'sector-3',
     title: 'Healthcare & Clinical Access',
-    status: 'horizon',
-    phase: 'FUTURE HORIZON',
     scope:
       'Exploring workflow infrastructure and logistics solutions that improve diagnostic turnaround, patient records, and supply reliability in local clinics.',
     operatingStandard: 'Rigorous regulatory review, privacy compliance, and health sector alignment.',
@@ -71,8 +57,6 @@ const sectorBreadth: DimensionItem[] = [
   {
     id: 'sector-4',
     title: 'Legal Services & Institutional Compliance',
-    status: 'horizon',
-    phase: 'FUTURE HORIZON',
     scope:
       'Software and operational systems that streamline commercial agreements, regulatory filings, and dispute mitigation for small enterprises and independent contractors.',
     operatingStandard: 'In-house legal oversight and institutional governance integration.',
@@ -88,10 +72,6 @@ export function Focus() {
     <section id="roadmap" className="section focus-section">
       <div className="container">
         <div className="section-header">
-          <span className="mono-tag active">
-            <span className="status-indicator" />
-            SECTION 03 · TWO-DIMENSIONAL GROWTH MATRIX
-          </span>
           <h2 className="section-title">Growing deeper in technology, wider across sectors.</h2>
           <p className="section-lead">
             Technology is Aoni&apos;s starting point, not its boundary. Our long-term trajectory is
@@ -130,14 +110,6 @@ export function Focus() {
         <div className="vector-matrix-grid">
           {items.map((item) => (
             <div key={item.id} className="vector-item-card">
-              <div className="vector-item-header">
-                <span
-                  className={`vector-status-pill status-${item.status}`}
-                >
-                  {item.phase}
-                </span>
-                <span className="mono-tag">{item.status === 'active' ? 'IN EXECUTION' : 'PLANNED'}</span>
-              </div>
               <h3 className="vector-item-title">{item.title}</h3>
               <p className="vector-item-scope">{item.scope}</p>
               <div className="vector-item-footer">

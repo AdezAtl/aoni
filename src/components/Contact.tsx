@@ -65,15 +65,7 @@ export function Contact() {
     <section id="terminal" className="section contact-section">
       <div className="container">
         <div className="section-header">
-          <span className="mono-tag active">
-            <span className="status-indicator" />
-            SECTION 06 · INSTITUTIONAL INQUIRIES & REGISTRATION
-          </span>
-          <h2 className="section-title">Engage with Aoni: Direct institutional terminal.</h2>
-          <p className="section-lead">
-            Whether you represent a prospective enterprise partner, institutional collaborator, or an
-            artisan seeking early onboarding for JUT, submit your parameters below.
-          </p>
+          <h2 className="section-title">Send Us A Message Today.</h2>
         </div>
 
         <div className="contact-grid-layout">
@@ -95,19 +87,13 @@ export function Contact() {
                 </div>
                 <div className="contact-meta-item">
                   <span className="meta-item-label">Operating Headquarters</span>
-                  <strong className="meta-item-value">Lagos, Nigeria</strong>
+                  <strong className="meta-item-value">Benin City, Edo State, Nigeria</strong>
                 </div>
                 <div className="contact-meta-item">
                   <span className="meta-item-label">Primary Electronic Mail</span>
                   <a href="mailto:hello@aoni.ng" className="meta-item-value contact-email-link">
                     hello@aoni.ng
                   </a>
-                </div>
-                <div className="contact-meta-item">
-                  <span className="meta-item-label">Operational Status</span>
-                  <strong className="meta-item-value status-active-text">
-                    <span className="status-indicator" /> Pre-launch / Active Development
-                  </strong>
                 </div>
               </div>
 

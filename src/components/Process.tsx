@@ -38,7 +38,7 @@ const lifecycleStages: LifecycleStage[] = [
     step: '05',
     name: 'Development',
     focus: 'Build frontend and backend functionality, integrate required APIs, optimize performance, and maintain clean, organized code.',
-    deliverable: 'Functional Staging Release (iOS & Android)',
+    deliverable: 'Functional Staging Release',
   },
   {
     step: '06',
@@ -67,20 +67,14 @@ const lifecycleStages: LifecycleStage[] = [
 ]
 
 export function Process() {
-  const [selectedStage, setSelectedStage] = useState<number>(4) // Default to Development
+  const [selectedStage, setSelectedStage] = useState<number>(0) // Default to Problem
 
   return (
     <section id="process" className="section process-section">
       <div className="container">
         <div className="section-header">
-          <span className="mono-tag active">
-            <span className="status-indicator" />
-            SECTION 04 · PRODUCT-DEVELOPMENT CYCLE
-          </span>
-          <h2 className="section-title">From problem to product: Our 9-stage development cycle.</h2>
-          <p className="section-lead">
-            Our current engineering is centred around JUT. This product-development cycle guides how we build
-            today — and will apply to future products and sectors as Aoni expands.
+          <h2 className="section-title">Our development cycle.</h2>
+          <p className="section-lead">This product-development cycle guides how we build products at Aoni, from the first spark of an idea to real-world deployment.
           </p>
         </div>
 
@@ -107,19 +101,6 @@ export function Process() {
                 <span className="panel-badge-step">CYCLE STAGE {lifecycleStages[selectedStage].step}</span>
                 <h3 className="panel-stage-name">{lifecycleStages[selectedStage].name}</h3>
               </div>
-              <div className="panel-status-pill">
-                {selectedStage <= 4 ? (
-                  <>
-                    <span className="status-indicator" style={{ backgroundColor: 'var(--color-status-active)' }} />
-                    <span>ACTIVE STAGE (JUT)</span>
-                  </>
-                ) : (
-                  <>
-                    <span className="status-indicator" style={{ backgroundColor: 'var(--color-accent)' }} />
-                    <span>PRE-LAUNCH PIPELINE</span>
-                  </>
-                )}
-              </div>
             </div>
 
             <div className="lifecycle-panel-body">
@@ -140,7 +121,7 @@ export function Process() {
                 disabled={selectedStage === 0}
                 onClick={() => setSelectedStage((s) => Math.max(0, s - 1))}
               >
-                ← Previous Step
+                ← Go Back
               </button>
               <span className="mono-tag">
                 STEP {selectedStage + 1} OF {lifecycleStages.length}

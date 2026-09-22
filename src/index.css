@@ -41,6 +41,9 @@
   --color-text-inverse: #ffffff;
   --color-text-inverse-muted: #98a2b3;
 
+  --color-btn-primary: #d74e1b;
+  --color-btn-primary-hover: #a44320;
+
   /* Dark Contrast Surfaces */
   --color-dark: #0c0e12;
   --color-dark-surface: #14171f;
@@ -48,8 +51,8 @@
   --color-dark-subtle: #1c202a;
 
   /* Functional Accents */
-  --color-accent: #155eef;
-  --color-accent-hover: #0040c1;
+  --color-accent: #d74e1b;
+  --color-accent-hover: #a44320;
   --color-accent-subtle: #eff4ff;
   --color-accent-border: #b2ccff;
   --color-status-active: #12b76a;
@@ -220,14 +223,14 @@ textarea {
 }
 
 .btn-primary {
-  background-color: var(--color-text-primary);
+  background-color: var(--color-btn-primary);
   color: #ffffff;
-  border-color: var(--color-text-primary);
+  border-color: var(--color-btn-primary);
 }
 
 .btn-primary:hover {
-  background-color: #000000;
-  border-color: #000000;
+  background-color: var(--color-btn-primary-hover);
+  border-color: var(--color-btn-primary-hover);
 }
 
 .btn-accent {
@@ -260,7 +263,18 @@ textarea {
 
 .btn-outline-dark:hover {
   background-color: var(--color-dark-subtle);
-  border-color: #475467;
+  border-color: #d74e1b;
+}
+
+.btn-outline-light {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.btn-outline-light:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  border-color: #ffffff;
 }
 
 .btn-sm {

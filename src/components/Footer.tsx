@@ -18,10 +18,6 @@ export function Footer() {
               Practical software and physical devices engineered to hold up under real Nigerian operating
               conditions: power cuts, patchy bandwidth, and real budgets.
             </p>
-            <div className="footer-meta-pill">
-              <span className="status-indicator" />
-              <span>STAGE: PRE-LAUNCH / BUILDING</span>
-            </div>
           </div>
 
           {/* Core Navigation */}
@@ -41,35 +37,7 @@ export function Footer() {
                 <a href="#process">Development Cycle</a>
               </li>
               <li>
-                <a href="#snapshot">Company Snapshot</a>
-              </li>
-              <li>
                 <a href="#terminal">Waitlist & Inquiries</a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Products & Pipeline */}
-          <div className="footer-col">
-            <h4 className="footer-col-title">Sectors & Build</h4>
-            <ul className="footer-nav-list">
-              <li>
-                <span>JUT Artisan Platform (In Build)</span>
-              </li>
-              <li>
-                <span>Advanced Services (Pipeline)</span>
-              </li>
-              <li>
-                <span>Hardware Devices (Horizon)</span>
-              </li>
-              <li>
-                <span>Education Systems (Planned)</span>
-              </li>
-              <li>
-                <span>Health & Logistics (Horizon)</span>
-              </li>
-              <li>
-                <span>Legal Frameworks (Horizon)</span>
               </li>
             </ul>
           </div>
@@ -101,11 +69,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="footer-bottom-bar">
           <div className="footer-copyright">
-            <p>© {new Date().getFullYear()} Aoni Ltd. All rights reserved. Operating under Nigerian corporate law.</p>
-          </div>
-          <div className="footer-system-badges">
-            <span className="mono-tag mono-tag-dark">REF: AONI-WEB-2026.01</span>
-            <span className="mono-tag mono-tag-dark">SECURITY CHECK: PASS</span>
+            <p>© {new Date().getFullYear()} Aoni Ltd. All rights reserved.</p>
           </div>
         </div>
       </div>

@@ -62,7 +62,7 @@
 }
 
 .stepper-node.active .stepper-step-num {
-  color: #93bbfd;
+  color: var(--color-accent);
 }
 
 .stepper-step-name {
@@ -111,7 +111,7 @@
 
 .panel-badge-step {
   font-family: var(--font-mono);
-  font-size: 0.75rem;
+  font-size: 0.6rem;
   font-weight: 600;
   color: var(--color-accent);
   letter-spacing: 0.05em;
@@ -120,20 +120,6 @@
 .panel-stage-name {
   font-size: 1.375rem;
   font-weight: 700;
-  color: var(--color-text-primary);
-}
-
-.panel-status-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-2);
-  padding: 6px 12px;
-  background-color: #ffffff;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius);
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  font-weight: 600;
   color: var(--color-text-primary);
 }
 
@@ -170,8 +156,8 @@
 }
 
 .panel-field-deliverable {
-  font-size: 0.9375rem;
-  font-weight: 600;
+  font-size: 0.75rem;
+  font-weight: 400;
   color: var(--color-accent);
   padding: var(--space-3);
   background-color: #ffffff;
@@ -187,3 +173,9 @@
   border-top: 1px solid var(--color-border);
 }
 
+@media (max-width: 640px) {
+  .mono-tag {
+    padding-left: 0.7rem;
+    font-size: 0.7rem;
+  }
+}

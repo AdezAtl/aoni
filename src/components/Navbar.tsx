@@ -27,10 +27,6 @@ export function Navbar() {
       <div className="container navbar-inner">
         <a href="#" className="navbar-brand" aria-label="Aoni Ltd Home">
           <img src={logoLight} alt="Aoni Ltd" className="navbar-logo" />
-          <div className="navbar-badge">
-            <span className="status-indicator" />
-            <span className="navbar-badge-text">PRE-LAUNCH · BUILD</span>
-          </div>
         </a>
 
         <nav className={`navbar-nav ${menuOpen ? 'open' : ''}`} aria-label="Main Navigation">
