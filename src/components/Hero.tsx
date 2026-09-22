@@ -17,9 +17,6 @@ export function Hero() {
 
       <div className="hero-content-wrapper">
         <div className="container">
-          <div className="hero-meta-bar">
-            <span className="mono-tag">BENIN CITY, EDO STATE, NIGERIA · 2026</span>
-          </div>
 
           <div className="hero-text-block">
             <h1 className="hero-headline">

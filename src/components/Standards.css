@@ -31,6 +31,7 @@
 }
 
 .standards-quote {
+  font-family: var(--font-heading);
   font-size: clamp(1.25rem, 2.4vw, 1.75rem);
   font-weight: 600;
   line-height: 1.35;
@@ -90,13 +91,14 @@
 }
 
 .standards-num {
-  font-family: var(--font-mono);
-  font-size: 1rem;
+  font-family: var(--font-heading);
+  font-size: 1.125rem;
   font-weight: 700;
   color: var(--color-accent);
 }
 
 .standards-card-title {
+  font-family: var(--font-heading);
   font-size: 1.125rem;
   font-weight: 600;
   line-height: 1.35;
@@ -122,7 +124,8 @@
 
 .standards-metric-label {
   font-size: 0.75rem;
-  font-family: var(--font-mono);
+  font-family: var(--font-body);
+  font-weight: 600;
   color: var(--color-text-muted);
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -180,8 +183,9 @@
 }
 
 .foundation-label {
-  font-family: var(--font-mono);
+  font-family: var(--font-body);
   font-size: 0.75rem;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: var(--color-text-muted);

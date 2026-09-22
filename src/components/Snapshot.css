@@ -25,7 +25,7 @@
 }
 
 .snapshot-stage-tag {
-  font-family: var(--font-mono);
+  font-family: var(--font-body);
   font-size: 0.6875rem;
   font-weight: 600;
   color: var(--color-accent);
@@ -33,6 +33,8 @@
   border: 1px solid var(--color-accent-border);
   padding: 2px 8px;
   border-radius: var(--radius-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .snapshot-metrics-grid {
@@ -63,8 +65,9 @@
 }
 
 .snapshot-item-label {
-  font-family: var(--font-mono);
+  font-family: var(--font-body);
   font-size: 0.6875rem;
+  font-weight: 600;
   text-transform: uppercase;
   color: var(--color-text-muted);
   letter-spacing: 0.05em;
@@ -87,8 +90,10 @@
 }
 
 .snapshot-ambition-text {
-  font-size: 0.9375rem;
+  font-family: var(--font-heading);
+  font-size: 1.125rem;
   font-weight: 600;
+  line-height: 1.5;
   color: var(--color-text-primary);
-  font-style: italic;
+  font-style: normal;
 }
