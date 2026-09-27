@@ -28,7 +28,7 @@ export function Hero() {
             </p>
 
             <div className="hero-ctas">
-              <a href="#terminal" className="btn btn-primary">
+              <a href="https://juthire.com/join/" className="btn btn-primary">
                 Join Product Waitlist
                 <span aria-hidden="true">→</span>
               </a>
