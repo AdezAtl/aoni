@@ -1,24 +1,12 @@
 import heroImage from '../assets/hero_image.png'
-import heroImage2 from '../assets/hero_image_landscape.jpg'
 import './Hero.css'
 
 export function Hero() {
   return (
     <section id="overview" className="hero-section">
-      <picture>
-        <source media="(min-width: 768px)" srcSet={heroImage2} />
-        <img
-          src={heroImage}
-          alt="Aoni team collaborating on software development"
-          className="hero-background-image"
-        />
-      </picture>
-      <div className="hero-overlay" />
-
-      <div className="hero-content-wrapper">
-        <div className="container">
-
-          <div className="hero-text-block">
+      <div className="container">
+        <div className="hero-grid">
+          <div className="hero-left-col">
             <h1 className="hero-headline">
               Build technology that works where it&apos;s needed most.
             </h1>
@@ -37,8 +25,20 @@ export function Hero() {
               </a>
             </div>
           </div>
+
+          <div className="hero-right-col">
+            <div className="hero-image-frame">
+              <img
+                src={heroImage}
+                alt="Aoni engineers in hardware testing and software development laboratory"
+                className="hero-image"
+                loading="eager"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
   )
 }
+
