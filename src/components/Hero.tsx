@@ -21,7 +21,7 @@ export function Hero() {
                 <span aria-hidden="true">→</span>
               </a>
               <a href="#standards" className="btn btn-outline-light">
-                Engineering Doctrine
+                How we build
               </a>
             </div>
           </div>

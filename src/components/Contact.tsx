@@ -95,12 +95,17 @@ export function Contact() {
                     hello@aoniltd.com
                   </a>
                 </div>
+                <div className="contact-meta-item">
+                  <span className="meta-item-label">WhatsApp &amp; Phone</span>
+                  <a href="https://wa.me/2347000822357" target="_blank" rel="noreferrer" className="meta-item-value contact-email-link">
+                    07000822357
+                  </a>
+                </div>
               </div>
 
               <div className="contact-meta-footer">
                 <p className="contact-notice-text">
-                  Direct inquiries receive responses within two business days. We do not sell or
-                  distribute contact information to third parties.
+                  Have a question, or want to partner with us? We reply within two business days.
                 </p>
               </div>
             </div>
@@ -140,13 +145,13 @@ export function Contact() {
                 {submitted ? (
                   <div className="terminal-success-card" role="alert">
                     <div className="success-badge">CONFIRMED</div>
-                    <h3 className="success-title">Transmission Received</h3>
+                    <h3 className="success-title">Message Received</h3>
                     <p className="success-message">
-                      Your dispatch has been logged in our queue. Our leadership or operations
-                      coordinator will review your parameters and follow up accordingly.
+                      Thank you. Your message has been received. Our team will review your inquiry
+                      and reply within two business days.
                     </p>
                     <button type="button" className="btn btn-outline btn-sm" onClick={handleReset}>
-                      Submit another inquiry
+                      Send another message
                     </button>
                   </div>
                 ) : activeTab === 'institutional' ? (
@@ -233,9 +238,9 @@ export function Contact() {
 
                     <div className="form-actions">
                       <button type="submit" className="btn btn-primary" disabled={loading}>
-                        {loading ? 'Transmitting...' : 'Transmit Inquiry →'}
+                        {loading ? 'Sending...' : 'Send message →'}
                       </button>
-                      <span className="mono-tag">Direct route to Aoni leadership queue</span>
+                      <span className="mono-tag">Direct route to Aoni team</span>
                     </div>
                   </form>
                 ) : (
@@ -318,7 +323,7 @@ export function Contact() {
                         type="text"
                         required
                         className="form-input"
-                        placeholder="e.g. Lagos (Ikeja, Lekki, Yaba, etc.)"
+                        placeholder="e.g. Benin City, Lagos, etc."
                         value={accessForm.city}
                         onChange={(e) => setAccessForm({ ...accessForm, city: e.target.value })}
                       />
@@ -326,9 +331,9 @@ export function Contact() {
 
                     <div className="form-actions">
                       <button type="submit" className="btn btn-accent" disabled={loading}>
-                        {loading ? 'Registering...' : 'Register for Early Access →'}
+                        {loading ? 'Submitting...' : 'Join the waitlist →'}
                       </button>
-                      <span className="mono-tag">Lagos pilot deployment cohort</span>
+                      <span className="mono-tag">Early launch cohort</span>
                     </div>
                   </form>
                 )}

@@ -113,7 +113,7 @@ export function Focus() {
               <h3 className="vector-item-title">{item.title}</h3>
               <p className="vector-item-scope">{item.scope}</p>
               <div className="vector-item-footer">
-                <span className="vector-footer-label">Execution Invariant:</span>
+                <span className="vector-footer-label">How we build it:</span>
                 <span className="vector-footer-value">{item.operatingStandard}</span>
               </div>
             </div>

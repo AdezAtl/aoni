@@ -14,17 +14,17 @@ export function Standards() {
           </p>
         </div>
 
-        {/* Institutional Invariant Callout */}
+        {/* How We Build Callout */}
         <div className="standards-callout">
           <div className="standards-callout-border" />
           <div className="standards-callout-content">
-            <span className="mono-tag mono-tag-dark">THE AONI INVARIANT</span>
+            <span className="mono-tag mono-tag-dark">HOW WE BUILD</span>
             <blockquote className="standards-quote">
               &ldquo;Whether on an app&apos;s splash screen or a device nameplate, it communicates
               one standard: It works, and it was made with care.&rdquo;
             </blockquote>
             <div className="standards-attribution">
-              <span>Aoni Ltd Operating Constitution</span>
+              <span>Aoni Ltd Operating Standard</span>
               <span className="standards-divider-dot">·</span>
               <span className="mono-tag mono-tag-dark">BENIN CITY, EDO STATE, NIGERIA</span>
             </div>

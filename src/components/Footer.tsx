@@ -44,24 +44,26 @@ export function Footer() {
 
           {/* Institutional Compliance */}
           <div className="footer-col">
-            <h4 className="footer-col-title">Institutional Data</h4>
-            <div className="footer-governance-item">
-              <span className="footer-gov-label">Corporate Entity</span>
-              <span className="footer-gov-val">Aoni Ltd</span>
-            </div>
-            <div className="footer-governance-item">
-              <span className="footer-gov-label">Jurisdiction</span>
-              <span className="footer-gov-val">Federal Republic of Nigeria</span>
-            </div>
+            <h4 className="footer-col-title">Contact &amp; Location</h4>
             <div className="footer-governance-item">
               <span className="footer-gov-label">Headquarters</span>
               <span className="footer-gov-val">Benin City, Edo State, Nigeria</span>
             </div>
             <div className="footer-governance-item">
-              <span className="footer-gov-label">Inquiries</span>
+              <span className="footer-gov-label">Email</span>
               <a href="mailto:hello@aoniltd.com" className="footer-gov-val footer-gov-link">
                 hello@aoniltd.com
               </a>
+            </div>
+            <div className="footer-governance-item">
+              <span className="footer-gov-label">WhatsApp &amp; Phone</span>
+              <a href="https://wa.me/2347000822357" target="_blank" rel="noreferrer" className="footer-gov-val footer-gov-link">
+                07000822357
+              </a>
+            </div>
+            <div className="footer-governance-item">
+              <span className="footer-gov-label">Response Time</span>
+              <span className="footer-gov-val">We reply within two business days.</span>
             </div>
           </div>
         </div>
