@@ -1,4 +1,4 @@
-import founderPhoto from '../assets/founder_james.jpg'
+import founderPhoto from '../assets/founder_james.png'
 import './Team.css'
 
 export function Team() {
