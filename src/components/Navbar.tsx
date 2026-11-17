@@ -8,6 +8,7 @@ const navLinks = [
   { label: 'Growth Matrix', href: '#roadmap' },
   { label: 'Process', href: '#process' },
   { label: 'Snapshot', href: '#snapshot' },
+  { label: 'Team', href: '#team' },
 ]
 
 export function Navbar() {

@@ -91,8 +91,8 @@ export function Contact() {
                 </div>
                 <div className="contact-meta-item">
                   <span className="meta-item-label">Primary Electronic Mail</span>
-                  <a href="mailto:hello@aoni.ng" className="meta-item-value contact-email-link">
-                    hello@aoni.ng
+                  <a href="mailto:hello@aoniltd.com" className="meta-item-value contact-email-link">
+                    hello@aoniltd.com
                   </a>
                 </div>
               </div>

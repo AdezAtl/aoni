@@ -59,8 +59,8 @@ export function Footer() {
             </div>
             <div className="footer-governance-item">
               <span className="footer-gov-label">Inquiries</span>
-              <a href="mailto:hello@aoni.ng" className="footer-gov-val footer-gov-link">
-                hello@aoni.ng
+              <a href="mailto:hello@aoniltd.com" className="footer-gov-val footer-gov-link">
+                hello@aoniltd.com
               </a>
             </div>
           </div>
