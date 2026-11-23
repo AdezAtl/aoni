@@ -34,8 +34,7 @@ export function Team() {
                 <span className="founder-role">Founder &amp; CEO</span>
               </div>
               <p className="founder-bio">
-                A registered radiographer with an MSc in Data Science and AI. James started Aoni
-                to build technology that works for everyday Nigerians.
+                A registered radiographer and model who brings creative flair to practical problem-solving. James started Aoni to build technology that works for everyday Nigerians.
               </p>
               <div className="founder-meta">
                 <span className="mono-tag">LEADERSHIP · BENIN CITY, NIGERIA</span>
