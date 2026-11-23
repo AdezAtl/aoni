@@ -1,4 +1,5 @@
 import founderPhoto from '../assets/founder_james.png'
+import teamPhoto from '../assets/team_photo.jpg'
 import './Team.css'
 
 export function Team() {
@@ -50,8 +51,17 @@ export function Team() {
                 <span className="team-count-badge">35 TEAM MEMBERS</span>
               </div>
               <p className="team-aggregate-text">
-                Aoni is a team of 35 people based in Benin City. [Team photo here]
+                Aoni is a team of 35 people based in Benin City.
               </p>
+              <div className="team-photo-wrap">
+                <img
+                  src={teamPhoto}
+                  alt="Aoni team members based in Benin City"
+                  className="team-photo"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
               <div className="team-aggregate-footer">
                 <span className="mono-tag">CROSS-FUNCTIONAL: ENGINEERING · OPERATIONS · DESIGN · LEGAL</span>
               </div>
