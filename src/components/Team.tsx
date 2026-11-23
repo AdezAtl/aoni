@@ -43,20 +43,20 @@ export function Team() {
             </div>
           </div>
 
-          {/* 35-person Team Card */}
+          {/* Team Card */}
           <div className="team-aggregate-card tech-frame">
             <div className="team-aggregate-content">
               <div className="team-aggregate-header">
-                <span className="mono-tag">OPERATIONAL SCALE</span>
-                <span className="team-count-badge">35 TEAM MEMBERS</span>
+                <span className="mono-tag">ORGANISATION</span>
+                <span className="team-count-badge">CORE TEAM</span>
               </div>
               <p className="team-aggregate-text">
-                A multidisciplinary team of 35 collaborating across Nigeria, combining hands-on field operations with software engineering and design.
+                A multidisciplinary team collaborating across Nigeria, combining hands-on field operations with software engineering and design.
               </p>
               <div className="team-photo-wrap">
                 <img
                   src={teamPhoto}
-                  alt="Aoni cross-functional team members collaborating across Nigeria"
+                  alt="Aoni cross-functional team collaborating across Nigeria"
                   className="team-photo"
                   loading="lazy"
                   decoding="async"
