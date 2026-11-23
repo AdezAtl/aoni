@@ -13,7 +13,7 @@ export function Team() {
           </span>
           <h2 className="section-title">The people behind Aoni.</h2>
           <p className="section-lead">
-            Aoni is guided and built by an early-stage collaborative team based in Benin City,
+            Aoni is guided and built by an early-stage collaborative team across Nigeria,
             focused on engineering practical solutions that hold up under real Nigerian conditions.
           </p>
         </div>
@@ -51,12 +51,12 @@ export function Team() {
                 <span className="team-count-badge">35 TEAM MEMBERS</span>
               </div>
               <p className="team-aggregate-text">
-                Aoni is a team of 35 people based in Benin City.
+                A multidisciplinary team of 35 collaborating across Nigeria, combining hands-on field operations with software engineering and design.
               </p>
               <div className="team-photo-wrap">
                 <img
                   src={teamPhoto}
-                  alt="Aoni team members based in Benin City"
+                  alt="Aoni cross-functional team members collaborating across Nigeria"
                   className="team-photo"
                   loading="lazy"
                   decoding="async"
